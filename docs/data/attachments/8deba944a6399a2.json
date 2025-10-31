@@ -1,0 +1,15 @@
+{
+  "first_place_attributes": {
+    "address_comment": "3 этаж",
+    "address_name": "Звенигородская улица, 1 к2",
+    "id": "5348552840836522",
+    "name": "Doski, бар-ресторан",
+    "point": {
+      "lat": 59.922348,
+      "lon": 30.335726
+    },
+    "type": "branch"
+  },
+  "total_places_found": 1164,
+  "items_returned": 10
+}

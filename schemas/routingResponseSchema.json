@@ -1,0 +1,120 @@
+{
+    "type": "object",
+    "required": ["status", "query", "type", "result"],
+    "properties": {
+        "status": {
+            "type": "string",
+            "enum": ["OK", "FAIL", "POINT_EXCLUDED", "ROUTE_NOT_FOUND", "ROUTE_DOES_NOT_EXISTS", "ATTRACT_FAIL"]
+        },
+        "type": {
+            "type": "string",
+            "enum": ["result", "error"]
+        },
+        "message": {"type": ["string", "null"]},
+        "result": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "id", "type", "algorithm", "total_distance", "total_duration",
+                    "ui_total_distance", "ui_total_duration", "maneuvers", "waypoints"
+                ],
+                "properties": {
+                    "id": {"type": "string"},
+                    "type": {
+                        "type": "string",
+                        "enum": ["carrouting", "taxirouting", "truckrouting", "pedestrianrouting", 
+                                "bicyclerouting", "emergencyrouting", "scooterrouting", "motorcyclerouting"]
+                    },
+                    "algorithm": {"type": "string"},
+                    "total_distance": {"type": "integer", "minimum": 0},
+                    "total_duration": {"type": "integer", "minimum": 0},
+                    "ui_total_distance": {
+                        "type": "object",
+                        "required": ["unit", "value"],
+                        "properties": {
+                            "unit": {"type": "string"},
+                            "value": {"type": ["string", "number"]}
+                        }
+                    },
+                    "ui_total_duration": {"type": "string"},
+                    "maneuvers": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "required": ["comment", "id", "icon", "type", "outcoming_path_comment"],
+                            "properties": {
+                                "comment": {"type": "string"},
+                                "id": {"type": ["string", "integer"]},
+                                "icon": {
+                                    "type": "string",
+                                    "enum": ["start", "finish", "crossroad_straight", "crossroad_keep_left", 
+                                            "crossroad_slightly_left", "crossroad_left", "crossroad_sharply_left",
+                                            "crossroad_sharply_right", "crossroad_right", "crossroad_slightly_right",
+                                            "crossroad_keep_right", "ringroad_forward", "ringroad_left_45",
+                                            "ringroad_left_90", "ringroad_left_135", "ringroad_left_180",
+                                            "ringroad_right_45", "ringroad_right_90", "ringroad_right_135",
+                                            "ringroad_right_180", "ringroad_exit", "turn_over_right_hand",
+                                            "turn_over_left_hand", "toll_icon", "indoor_enter", "indoor_exit",
+                                            "indoor_floor_change_stairway", "indoor_floor_change_elevator",
+                                            "indoor_floor_change_escalator"]
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "enum": ["begin", "end", "crossroad", "ringroad", "pass_through", "turnover",
+                                            "ringroad_exit", "pedestrian_begin", "pedestrian_crossroad",
+                                            "pedestrian_end", "pedestrian_road_crossing", "indoor_enter",
+                                            "indoor_exit", "indoor_floor_change"]
+                                },
+                                "outcoming_path_comment": {"type": "string"},
+                                "turn_direction": {
+                                    "type": "string",
+                                    "enum": ["straight", "keep_left", "slightly_left", "left", "sharply_left",
+                                            "sharply_right", "right", "slightly_right", "keep_right",
+                                            "uturn_right", "uturn_left", "right_with_left_turn"]
+                                },
+                                "turn_angle": {"type": ["integer", "null"]},
+                                "ringroad_exit_number": {"type": ["integer", "null"]}
+                            }
+                        }
+                    },
+                    "waypoints": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "required": ["original_point", "projected_point", "transit"],
+                            "properties": {
+                                "original_point": {
+                                    "type": "object",
+                                    "required": ["lat", "lon"],
+                                    "properties": {
+                                        "lat": {"type": "number"},
+                                        "lon": {"type": "number"}
+                                    }
+                                },
+                                "projected_point": {
+                                    "type": "object",
+                                    "required": ["lat", "lon"],
+                                    "properties": {
+                                        "lat": {"type": "number"},
+                                        "lon": {"type": "number"}
+                                    }
+                                },
+                                "transit": {"type": "boolean"}
+                            }
+                        }
+                    },
+                    "reliability": {"type": ["number", "null"]},
+                    "filter_road_types": {
+                        "type": ["array", "null"],
+                        "items": {
+                            "type": "string",
+                            "enum": ["dirt_road", "toll_road", "ferry", "highway", "ban_car_road", "ban_stairway"]
+                        }
+                    },
+                    "are_locked_roads_ignored": {"type": ["boolean", "null"]}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "payload": {
+    "points": [],
+    "locale": "ru",
+    "transport": "driving",
+    "route_mode": "fastest",
+    "traffic_mode": "jam",
+    "output": "detailed"
+  }
+}

@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Тест построения автомобильного маршрута между двумя точками","73","Building route with 2 points: driving","tests","Sat Nov 01 00:54:03 MSK 2025","passed","Sat Nov 01 00:54:03 MSK 2025","","test_api","",""
+"Тестирование режимов учета пробок","91","Test traffic modes","tests","Sat Nov 01 00:54:03 MSK 2025","passed","Sat Nov 01 00:54:03 MSK 2025","","test_api","",""
+"Тест построения автомобильного маршрута между двумя точками","92","Building route with 2 points: driving","tests","Sat Nov 01 00:54:03 MSK 2025","passed","Sat Nov 01 00:54:03 MSK 2025","","test_api","",""
+"Тест поиска мест по текстовому запросу и проверка атрибутов объектов","102","Search places by text query and validate attributes","tests","Sat Nov 01 00:54:03 MSK 2025","passed","Sat Nov 01 00:54:03 MSK 2025","","test_api","",""
+"Тест обработки ошибок при некорректных данных в теле","45","Check error handling with invalid input","tests","Sat Nov 01 00:54:03 MSK 2025","passed","Sat Nov 01 00:54:03 MSK 2025","","test_api","",""
+"Тестирование режимов учета пробок","78","Test traffic modes","tests","Sat Nov 01 00:54:03 MSK 2025","passed","Sat Nov 01 00:54:03 MSK 2025","","test_api","",""
+"Тест поиска по текстовому запросу неподдерживаемого места","83","Search deserted/unsupported places by text query","tests","Sat Nov 01 00:54:03 MSK 2025","passed","Sat Nov 01 00:54:03 MSK 2025","","test_api","",""

@@ -1,0 +1,8 @@
+{
+  "params": {
+    "q": "кафе",
+    "location": "30.334575,59.928964",
+    "key": "624404dc-3c68-404e-ad0a-fc3c4e418636",
+    "fields": "items.point"
+  }
+}

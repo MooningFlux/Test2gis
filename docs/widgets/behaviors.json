@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"b8cfcfdd7e495ab31defdd614354fc53","name":"Routing API","statistic":{"failed":0,"broken":0,"skipped":0,"passed":5,"unknown":0,"total":5}},{"uid":"2c27aba6a5e738e5b5db95e7b9bd97bb","name":"Places API","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}

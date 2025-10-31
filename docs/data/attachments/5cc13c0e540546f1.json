@@ -1,0 +1,33 @@
+{
+  "points": [
+    {
+      "type": "stop",
+      "lon": 37.582591,
+      "lat": 55.775364
+    },
+    {
+      "type": "stop",
+      "lon": 37.579206,
+      "lat": 55.774362
+    }
+  ],
+  "payload": {
+    "points": [
+      {
+        "type": "stop",
+        "lon": 37.582591,
+        "lat": 55.775364
+      },
+      {
+        "type": "stop",
+        "lon": 37.579206,
+        "lat": 55.774362
+      }
+    ],
+    "locale": "ru",
+    "transport": "driving",
+    "route_mode": "fastest",
+    "traffic_mode": "jam",
+    "output": "detailed"
+  }
+}

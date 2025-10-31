@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# allure
+allure-results/
+
+# vscode
+.vscode/
+
 # Distribution / packaging
 .Python
 build/

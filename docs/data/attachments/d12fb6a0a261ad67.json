@@ -1,0 +1,160 @@
+{
+  "message": null,
+  "query": {
+    "locale": "ru",
+    "output": "detailed",
+    "points": [
+      {
+        "lat": 55.775364,
+        "lon": 37.582591,
+        "type": "stop"
+      },
+      {
+        "lat": 55.774362,
+        "lon": 37.579206,
+        "type": "stop"
+      }
+    ],
+    "route_mode": "fastest",
+    "traffic_mode": "jam",
+    "transport": "driving"
+  },
+  "result": [
+    {
+      "algorithm": "с учётом пробок",
+      "begin_pedestrian_path": {
+        "geometry": {
+          "selection": "LINESTRING(37.582590 55.775363, 37.583086 55.775486)"
+        }
+      },
+      "end_pedestrian_path": {
+        "geometry": {
+          "selection": "LINESTRING(37.579375 55.774203, 37.579206 55.774362)"
+        }
+      },
+      "filter_road_types": [
+        "highway"
+      ],
+      "id": "12997849235883384103",
+      "maneuvers": [
+        {
+          "comment": "start",
+          "icon": "start",
+          "id": "1023008493543569841",
+          "outcoming_path": {
+            "distance": 30,
+            "duration": 9,
+            "geometry": [
+              {
+                "color": "normal",
+                "length": 9,
+                "selection": "LINESTRING(37.583086 55.775486, 37.583150 55.775405)",
+                "style": "normal"
+              },
+              {
+                "color": "fast",
+                "length": 21,
+                "selection": "LINESTRING(37.583150 55.775405, 37.583231 55.775307, 37.583253 55.775281, 37.583307 55.775231)",
+                "style": "normal"
+              }
+            ],
+            "names": [
+              "площадь Тверская Застава"
+            ]
+          },
+          "outcoming_path_comment": "30 м прямо",
+          "type": "begin"
+        },
+        {
+          "comment": "Поворот направо на ул. Грузинский Вал",
+          "icon": "crossroad_right",
+          "id": "6786516842699533586",
+          "outcoming_path": {
+            "distance": 327,
+            "duration": 71,
+            "geometry": [
+              {
+                "color": "fast",
+                "length": 327,
+                "selection": "LINESTRING(37.583307 55.775231, 37.583187 55.775191, 37.583032 55.775138, 37.581347 55.774564, 37.580879 55.774404, 37.580612 55.774313, 37.580302 55.774207, 37.580153 55.774156, 37.579955 55.774089, 37.579792 55.774034, 37.579402 55.773901, 37.579271 55.773856, 37.578973 55.773755, 37.578885 55.773725, 37.578732 55.773673)",
+                "style": "normal"
+              }
+            ],
+            "names": [
+              "Грузинский Вал"
+            ]
+          },
+          "outcoming_path_comment": "350 м прямо",
+          "turn_angle": 88,
+          "turn_direction": "right",
+          "type": "crossroad"
+        },
+        {
+          "comment": "Поворот направо",
+          "icon": "crossroad_right",
+          "id": "14325849666025005179",
+          "outcoming_path": {
+            "distance": 93,
+            "duration": 26,
+            "geometry": [
+              {
+                "color": "ignore",
+                "length": 93,
+                "selection": "LINESTRING(37.578732 55.773673, 37.578669 55.773730, 37.578554 55.773830, 37.578479 55.773898, 37.578702 55.773974, 37.578784 55.774002, 37.579107 55.774112, 37.579313 55.774182, 37.579375 55.774203)",
+                "style": "normal"
+              }
+            ],
+            "names": []
+          },
+          "outcoming_path_comment": "90 м прямо",
+          "turn_angle": 89,
+          "turn_direction": "right",
+          "type": "crossroad"
+        },
+        {
+          "comment": "finish",
+          "icon": "finish",
+          "id": "17223433631698559069",
+          "outcoming_path_comment": "Вы на месте!",
+          "type": "end"
+        }
+      ],
+      "reliability": 0.0,
+      "route_id": "moscow-cr-back.m1/carrouting/1761947646.619859",
+      "total_distance": 450,
+      "total_duration": 106,
+      "type": "carrouting",
+      "ui_total_distance": {
+        "unit": "м",
+        "value": "450"
+      },
+      "ui_total_duration": "1 мин",
+      "waypoints": [
+        {
+          "original_point": {
+            "lat": 55.77548691400483,
+            "lon": 37.58308675494588
+          },
+          "projected_point": {
+            "lat": 55.77548691400483,
+            "lon": 37.58308675494588
+          },
+          "transit": false
+        },
+        {
+          "original_point": {
+            "lat": 55.77420397246263,
+            "lon": 37.57937599417024
+          },
+          "projected_point": {
+            "lat": 55.77420397246263,
+            "lon": 37.57937599417024
+          },
+          "transit": false
+        }
+      ]
+    }
+  ],
+  "status": "OK",
+  "type": "result"
+}
